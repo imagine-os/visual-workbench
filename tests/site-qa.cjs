@@ -39,6 +39,23 @@ const path = require('node:path');
     await page.keyboard.press('Escape');
     results.push({ width, overflow: false, images: 'loaded', tabs: 'passed', keyboard: 'passed', imageDialog: 'passed', faq: 'passed' });
   }
+  for (const width of [1440,390,320]) {
+    await page.setViewportSize({width,height:900});
+    await page.goto('file://' + path.resolve('docs/motion-lab.html'));
+    await page.evaluate(async()=>Promise.all([...document.images].map(i=>i.decode())));
+    if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)) throw Error('Motion overflow '+width);
+    await page.getByRole('button',{name:'Greenhouse',exact:true}).click();
+    if(await page.locator('#b').getAttribute('aria-hidden')!=='false') throw Error('Scene switch failed');
+    await page.getByRole('button',{name:'Pause ambient motion'}).click();
+    if(await page.locator('#pause').getAttribute('aria-pressed')!=='true') throw Error('Pause failed');
+    await page.getByRole('button',{name:'Inspect the ingredients'}).click();
+    if(!(await page.locator('#details').isVisible())) throw Error('Disclosure failed');
+    await page.screenshot({path:'qa-output/motion-'+width+'.png',fullPage:true});
+    await page.emulateMedia({reducedMotion:'reduce'});
+    if(await page.locator('.glow').evaluate(e=>getComputedStyle(e).animationName)!=='none') throw Error('Reduced motion failed');
+    await page.emulateMedia({reducedMotion:'no-preference'});
+    results.push({width,motionLab:'passed'});
+  }
   if (errors.length) throw Error(errors.join('\n'));
   fs.writeFileSync('qa-output/results.json', JSON.stringify({ results, pageErrors: errors, source: 'checked-out docs/index.html' }, null, 2));
   console.log(JSON.stringify(results));
