@@ -50,6 +50,8 @@ const path = require('node:path');
     if(await page.locator('#pause').getAttribute('aria-pressed')!=='true') throw Error('Pause failed');
     await page.getByRole('button',{name:'Inspect the ingredients'}).click();
     if(!(await page.locator('#details').isVisible())) throw Error('Disclosure failed');
+    await page.waitForTimeout(850);
+    if(await page.locator('#b').evaluate(e=>Number(getComputedStyle(e).opacity))!==1) throw Error('Scene did not settle');
     await page.screenshot({path:'qa-output/motion-'+width+'.png',fullPage:true});
     await page.emulateMedia({reducedMotion:'reduce'});
     if(await page.locator('.glow').evaluate(e=>getComputedStyle(e).animationName)!=='none') throw Error('Reduced motion failed');
