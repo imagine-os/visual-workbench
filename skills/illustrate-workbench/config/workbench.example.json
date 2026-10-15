@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "example_only": true,
+  "renderer": {
+    "adapter": "host-native",
+    "fidelity": "illustrative",
+    "animation": false
+  },
+  "identity_map": {
+    "demo-user": {
+      "role": "user",
+      "character_pack": "paper-fold@1"
+    },
+    "demo-assistant": {
+      "role": "assistant",
+      "character_pack": "ceramic-courier@1"
+    }
+  },
+  "scene": {
+    "actor": "demo-assistant",
+    "environment_pack": "greenhouse@1",
+    "camera": "wide-three-quarter",
+    "brand_packs": []
+  },
+  "private_workspace": "outside-public-repository",
+  "evidence_policy": {
+    "recheck_before_render": true,
+    "missing_reference": "label-or-omit",
+    "synthetic_data_label": "DEMO"
+  },
+  "budget": {
+    "currency": null,
+    "total_approved": null
+  },
+  "pack_status": "proposed-assets-not-created"
+}
