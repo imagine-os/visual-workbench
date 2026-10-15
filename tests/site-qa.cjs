@@ -33,6 +33,10 @@ const path = require('node:path');
     if ((await page.locator('details').last().getAttribute('open')) === null) throw Error('FAQ failed');
     await page.getByText('How much will it cost?', { exact: true }).click();
     if ((await page.locator('details').last().getAttribute('open')) !== null) throw Error('FAQ close failed');
+    await page.locator('#continuity').screenshot({path: `qa-output/continuity-${width}.png`});
+    await page.getByRole('button', {name:'Expand greenhouse location test'}).click();
+    if (!(await page.locator('dialog').isVisible())) throw Error('Greenhouse expansion failed');
+    await page.keyboard.press('Escape');
     results.push({ width, overflow: false, images: 'loaded', tabs: 'passed', keyboard: 'passed', imageDialog: 'passed', faq: 'passed' });
   }
   if (errors.length) throw Error(errors.join('\n'));

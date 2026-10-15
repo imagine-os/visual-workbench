@@ -2,7 +2,7 @@
 
 Character-led visual reports grounded in verified project work, with reusable character, location, and brand packs.
 
-**Status: early draft. License selection is pending.** This is a publicly inspectable instruction package, not yet an open-source licensed release. A host-native image-generation adapter recipe and concrete prompt/correction templates are included; there is no standalone API client or platform plugin. Installation and the public showcase recipe have not yet been tested end to end.
+**Status: early draft. License selection is pending.** This is a publicly inspectable instruction package, not yet an open-source licensed release. A host-native image-generation adapter recipe and concrete prompt/correction templates are included; there is no standalone API client or platform plugin. Two bounded reference-driven generation demonstrations have been visually reviewed; installation and cross-host behavior remain untested.
 
 ## Included skills
 
@@ -25,9 +25,9 @@ The Agent Skills file format is portable. Tool availability, authentication, plu
 
 ## Public showcase
 
-[View the image-led showcase](https://imagine-os.github.io/visual-workbench/). It shows actual historical Dottie/HOY workbench illustrations and approved character, logo, and source-screen references. These are examples of the prior workflow, not evidence that this published package has passed installation or controlled location-consistency tests. Captions preserve historical status. Third-party marks identify source material and do not imply endorsement.
+[View the image-led showcase](https://imagine-os.github.io/visual-workbench/). It shows actual historical Dottie/HOY workbench illustrations and approved character, logo, and source-screen references. It also includes controlled same-studio and first-greenhouse demonstrations using the documented recipe. See the [validation log](skills/illustrate-workbench/examples/validation-log.md) for exact prompts, observations and limitations. These do not establish installer behavior or guaranteed consistency. Captions preserve historical status. Third-party marks identify source material and do not imply endorsement.
 
-Additional neutral character/location packs and controlled continuity tests remain planned.
+Additional neutral character/location packs, character-swap tests and repeated greenhouse reuse remain planned.
 
 ## Rights and license status
 
@@ -41,4 +41,4 @@ No open-source license is assigned at this stage. MIT is a proposed option for o
 - [OpenAI plugin architecture](https://developers.openai.com/plugins/concepts/plugins)
 - [OpenAI plugin packaging](https://developers.openai.com/plugins/build/plugins)
 
-Documentation checked 2026-10-15. Metadata validation passes for both included skills; behavioral and visual quality checks remain to be run.
+Documentation checked 2026-10-15. Metadata validation passes for both included skills; two recipe outputs were visually reviewed. Installer, cross-host and broader repeatability checks remain to be run.

@@ -1,3 +1,2 @@
-# Showcase assets
 
-Approved historical workbench illustrations and source reference images, included for viewing on this showcase. No blanket redistribution license is assigned. Third-party marks and product imagery retain their owners' rights; their appearance does not imply endorsement. Captions preserve the historical state. Generated screen depictions need inspection; genuine source captures remain the evidence for exact interface details.
+Controlled recipe demonstrations (October 15, 2026): room-reuse-demo.jpg and greenhouse-demo.jpg are generated demonstrations using the approved character, original studio, genuine source screen and separate brand mark. Both were visually inspected. See the skill's examples/validation-log.md for prompts, observed results and limits. Greenhouse reuse and character swapping remain untested. These files carry no implied third-party asset license grant.
