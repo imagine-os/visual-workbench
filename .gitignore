@@ -1,0 +1,7 @@
+private/
+local/
+outputs/
+workbench.local.json
+.env
+.env.*
+*.key
