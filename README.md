@@ -2,14 +2,14 @@
 
 Character-led visual reports grounded in verified project work, with reusable character, location, and brand packs.
 
-**Status: early draft. License selection is pending.** This is a publicly inspectable instruction package, not yet an open-source licensed release. No image renderer adapter or platform plugin is implemented here, and installation and visual behavior have not been tested end to end.
+**Status: early draft. License selection is pending.** This is a publicly inspectable instruction package, not yet an open-source licensed release. A host-native image-generation adapter recipe and concrete prompt/correction templates are included; there is no standalone API client or platform plugin. Installation and the public showcase recipe have not yet been tested end to end.
 
 ## Included skills
 
 - `skills/illustrate-workbench/`: plan and review workbench illustrations using genuine screenshots, stable character/location references, and evidence-backed work states
 - `skills/organize-brand-assets/`: preserve canonical originals and organize approved or proposed logo, character, and environment variants with provenance and versioning
 
-Each skill has a `SKILL.md` entrypoint. Supporting references define pack contracts, renderer capabilities, and quality gates. The example configuration uses fictional identities and proposed assets. No character sheets, customer screenshots, real brand assets, or finished demo renders are bundled.
+Each skill has a `SKILL.md` entrypoint. Supporting references define pack contracts, renderer capabilities, exact prompt/reference ordering, focused correction loops, and quality gates. A sanitized example identifies which steps came from prior successful production illustrations and which features, including explicit location packs, still need validation. The example configuration uses fictional identities and proposed assets. The skill folders do not bundle character sheets or private project evidence. The separate public showcase in `docs/` includes approved illustrated snapshots and source reference imagery, with distinct rights and caveats.
 
 ## Getting started
 
@@ -23,9 +23,11 @@ The two skills are usable instruction packages. A target-specific plugin can lat
 
 The Agent Skills file format is portable. Tool availability, authentication, plugin manifests, and installation behavior still depend on the host. There is no universal installer or tested cross-platform compatibility claim.
 
-## Planned demonstrations
+## Public showcase
 
-Original neutral assets: a ceramic courier and paper-fold companion, a sunlit studio and greenhouse desk, and a fictional demo application with synthetic data. Its running interface would be captured for the device screens, with a visible DEMO label. These assets and renders are not included yet.
+[View the image-led showcase](https://imagine-os.github.io/visual-workbench/). It shows actual historical Dottie/HOY workbench illustrations and approved character, logo, and source-screen references. These are examples of the prior workflow, not evidence that this published package has passed installation or controlled location-consistency tests. Captions preserve historical status. Third-party marks identify source material and do not imply endorsement.
+
+Additional neutral character/location packs and controlled continuity tests remain planned.
 
 ## Rights and license status
 

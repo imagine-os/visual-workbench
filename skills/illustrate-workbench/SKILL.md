@@ -23,6 +23,8 @@ Use evidence-supported states: LIVE, REVIEW READY, NOW, EXPLORING, WAITING, DRAF
 
 ## Compose
 
+Use [prompt-recipes.md](references/prompt-recipes.md) for report mode, explicit reference ordering, the generation template, and the targeted correction loop. For a host-native renderer, read [host-imagegen-adapter.md](references/host-imagegen-adapter.md). These are executable recipes, not an included image API client.
+
 Plan one clear action: character gaze or gesture → task artifact → result or handoff. Use a small number of legible stations, bright balanced exposure, open shadows, quiet architecture, local accent colors, and tactile materials. Avoid floating dashboard clutter and unreadable miniature text.
 
 Map every reference to a role: character, location, project screen, or brand. Put the genuine project interface naturally on the matching monitor, tablet, or output board. Pair logos with separately inspected verified files; never invent or redraw an unavailable mark. Respect the renderer's actual reference limits. Reduce scope rather than silently omitting required identity or product references.
@@ -34,3 +36,7 @@ Generated screen details can drift. Call the result an illustration, not a pixel
 Apply [quality-gates.md](references/quality-gates.md). Inspect the actual rendered output, compare identity and brands directly with references, and correct the most important defect with a bounded retry. Recheck status after changes. Deliver via the host's supported attachment method, noting any material caveat or later status change.
 
 Keep private inputs, evidence, prompts containing project context, signed URLs, and output files outside the public skill. Public demo inputs must be separately cleared. A request for an illustration does not authorize posting it publicly, changing an app, or sending it to a new external service.
+
+Public exercise results and limitations belong in [validation-log.md](examples/validation-log.md); do not claim a visual test passed before its output has been inspected.
+
+For concrete wording adapted from a successful workflow and its corrections, read [sanitized-production-recipe.md](examples/sanitized-production-recipe.md). It explicitly distinguishes observed practice from new location-pack behavior.

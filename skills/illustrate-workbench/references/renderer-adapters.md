@@ -10,4 +10,4 @@ Suggested first implementation: host-native image generation plus file attachmen
 
 Animation is an optional extra. Keep text/screens/marks static when possible while animating a small gesture or environmental motion. It adds provider exposure, cost, and QA; it is not enabled by installing this skill. Record actual cost where reported and stop at the approved total rather than using unbounded retries.
 
-No renderer adapter is implemented or certified by this planning draft.
+A host-native execution recipe is provided in `references/host-imagegen-adapter.md`. It is instructions for an available host tool, not a standalone client. The public recipe validation status is recorded in `examples/validation-log.md`; no adapter is certified across platforms.
