@@ -1,6 +1,6 @@
 ---
 name: illustrate-workbench
-description: Turn verified project work into bright, character-led workbench illustrations with genuine product references on physical devices. Use for visual progress reports, deliverable showcases, and depictions of an assistant working. Excludes ordinary status summaries and application implementation.
+description: Turn verified project work into bright, character-led workbench illustrations with genuine product references on physical devices. Use for visual progress reports, deliverable showcases, and depictions of an assistant working. Also use for seamless living loops, bridges between scenes, and interactive workbench presentations. Excludes ordinary status summaries and unrelated application implementation.
 ---
 
 # Illustrate Workbench
@@ -30,6 +30,10 @@ Plan one clear action: character gaze or gesture → task artifact → result or
 Map every reference to a role: character, location, project screen, or brand. Put the genuine project interface naturally on the matching monitor, tablet, or output board. Pair logos with separately inspected verified files; never invent or redraw an unavailable mark. Respect the renderer's actual reference limits. Reduce scope rather than silently omitting required identity or product references.
 
 Generated screen details can drift. Call the result an illustration, not a pixel-exact capture. If exact UI or marks matter, use an authorized compositing adapter to place source pixels onto device surfaces, with perspective and occlusion handled deliberately. Otherwise omit an unreliable mark and disclose the limitation.
+
+## Motion and interaction extensions
+
+For living scenes, read [living-loops.md](references/living-loops.md). For transitions between loops, read [scene-transitions.md](references/scene-transitions.md). For clickable or connected workbenches, read [interactive-workbenches.md](references/interactive-workbenches.md). Preserve exact text and source imagery on stable layers, honor accessibility and permissions, and test each delivered mode. These recipes do not establish that a video renderer or interactive runtime is included.
 
 ## Verify and deliver
 
